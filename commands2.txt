@@ -1,0 +1,47 @@
+5. Refactore Filenames
+  Deletes the file from the working directory and stages the deletion
+	# git rm [File]
+  Removes the file from version control but preserves the file locally
+	# git rm --cached [File]
+  Changes the file name and prepares it for commit
+	# git mv [File-Original] [File-Renamed]
+
+6. Suppress Tracking
+  Lists all ignored files in this project
+	# git ls-files --other --ignored --exclude-standard
+
+7. Save Fragments
+  Temporarily stores all modified tracked files
+	# git stash
+  Restores the most recently stashed files
+	# git stash pop
+  Lists all stashed changesets
+	# git stash list
+  Discards the most recently stashed changeset
+	# git stash drop
+
+8. Review History
+  Lists version history for the current branch
+	# git log
+  Lists version history for a file including renames
+	# git log --follow [File]
+  Shows content dirrerences between two branches
+	# git diff [First-Branch]...[Second-Branch]
+  Outputs metadata and content changes of the specified commit
+	# git show [Commit]
+
+9. Redo Commits
+  Undoes all commits after [commit], oreserving changes locally
+	# git reset [commit]
+  Discards all history and changes back to the specified commit
+	# git reset --hard [commit]
+
+10. Synchronize Changes
+  Downloads all history from the repository bookmark
+	# git fetch [bookmark]
+  Combines bookmark's branch into current local branch
+	# git merge [Bookmark]/[Branch]
+  Uploads all local branch commits to GitHub
+	# git push [alias] [Branch]
+  Downloads bookmark history and incorporates changes
+	# git pull

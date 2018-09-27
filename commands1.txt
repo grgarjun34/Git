@@ -1,0 +1,39 @@
+1. Configure Tooling
+  Sets the name you want attached to you commit transactions
+	# git config --global user.name "[Name]"
+  Sets the email you want attached to you commit transactions
+	# git config --global user.email "[Email Address]"
+  Enables helpfull colorization of command line output
+	# git config --global color.ui auto
+
+2. Create Repositories
+  Creates a new local repository with the specified name
+	# git init [Project-Name]
+  Downloads a project and its entire version history
+	# git clone [url]
+
+3. Make Changes
+  Lists all new or modified files to be committed
+	# git status
+  Shows file differences not yet staged
+	# git diff
+  Snapshots the file in preparation for versioning
+	# git add [File]
+  Shows file differences between staging and the last file version
+	# git diff --staged
+  Unstages the file but preserve it's contents
+	# git reset [file]
+  Records file snapshots permanently in version history
+	# git commit -m "[Descriptive Message]"
+
+4. Group Changes
+  Lists all local branches in the current repository
+	# git branch
+  Creates a new branch
+	# git branch [Branch-Name]
+  Switches to the specified branch and updates the working directory
+	# git checkout [Branch-Name]
+  Combines the specified branch's history into the currecnt branch
+	# git merge [Branch]
+  Deletes the specified branch
+	# git branch -d [Branch-Name]
